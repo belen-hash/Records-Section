@@ -47,11 +47,21 @@
 				margin-right:15px;
 			}
 
-			#carouselExampleIndicators{
-				width:75%;
-				margin:30px auto;
+			#carouselExampleIndicators {
+			    width: 80%;
+			    margin: 30px auto;
 			}
-
+			
+			@media (max-width: 768px) {
+			    #carouselExampleIndicators {
+			        width: 95%;
+			    }
+			
+			    #carouselExampleIndicators .carousel-item img {
+			        height: 250px;
+			    }
+			}
+		
 			#carouselExampleIndicators .carousel-item img{
 				height:500px;
 				object-fit:contain;
@@ -82,11 +92,11 @@
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img src="1.png" class="d-block w-100">
+				<img src="1.png">
 			</div>
 
 			<div class="carousel-item">
-				<img src="2.png" class="d-block w-100">
+				<img src="2.png">
 			</div>
 
 		</div>
