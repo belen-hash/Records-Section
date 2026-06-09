@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Records Section</title>
+<link rel="icon" type="image/png" href="LOGO.png">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+	<style>
+			body{
+				font-family:'Poppins',sans-serif;
+				position:relative;
+				min-height:100vh;
+			}
+
+			body::before{
+				content:"";
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background:url('bg.jpg') center center no-repeat;
+				background-size:cover;
+				opacity:0.45; 
+				z-index:-1;
+			}
+
+			.navbar-custom{
+				background-color:#1e5911;
+				padding:5px;
+			}
+
+			.navbar-custom .navbar-brand{
+				color:white !important;
+				font-size:24px;
+				font-weight:600;
+				letter-spacing:1px;
+			}
+
+			.navbar-custom .navbar-brand:hover{
+				color:#f8f9fa !important;
+			}
+
+			.navbar-custom img{
+				margin-right:15px;
+			}
+
+			#carouselExampleIndicators{
+				width:75%;
+				margin:30px auto;
+			}
+
+			#carouselExampleIndicators .carousel-item img{
+				height:500px;
+				object-fit:contain;
+				border-radius:20px;
+			}
+	</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-light navbar-custom">
+    <a class="navbar-brand d-flex align-items-center" href="index.php">
+        <img src="LOGO.png" alt="Logo" width="130" height="100">
+        <span>RECORDS SECTION</span>
+    </a>
+</nav>
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Slides -->
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="images/1.png" class="d-block w-100">
+			</div>
+
+			<div class="carousel-item">
+				<img src="images/2.png" class="d-block w-100">
+			</div>
+
+		</div>
+
+		<!-- Controls -->
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+
+	</div>
+
+<!-- IMPORTANT JS (needed for auto-slide) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
