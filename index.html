@@ -99,6 +99,22 @@
 				object-fit:cover;
 				border-radius:15px;
 			}
+		
+			#floatingNotice{
+				position:fixed;
+				bottom:25px;
+				right:25px;
+				background:rgba(30,89,17,0.95);
+				color:#fff;
+				padding:18px 25px;
+				border-left:6px solid #ffd700;
+				border-radius:10px;
+				font-size:18px;
+				font-weight:600;
+				max-width:400px;
+				box-shadow:0 5px 20px rgba(0,0,0,.35);
+				z-index:9999;
+			}
 	</style>
 </head>
 
@@ -171,6 +187,10 @@
             </div>
         </div>
 
+		<div id="floatingNotice">
+			📢 Please submit all records on or before June 30, 2026.
+		</div>
+		
         <!-- Right Side - Image -->
 		<div class="col-md-4 pr-0">
 
